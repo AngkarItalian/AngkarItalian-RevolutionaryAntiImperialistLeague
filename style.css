@@ -1,0 +1,155 @@
+/* style.css */
+
+/* Index HTML */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    /*background-image: url('railhomepage.png'); /* Path to your background image */
+    /*background-size: cover; /* Ensures the image covers the entire background */
+    /*background-position: center; /* Centers the image */
+    /*background-repeat: no-repeat; /* Prevents the image from repeating */
+    /*background-attachment: fixed; /* Keeps the image fixed when scrolling */
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #444;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+
+
+/* Editorial Section Styling */
+#editorials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#editorials article {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+#editorials article img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+#editorials article h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
+#editorials article p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#editorials article:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    #editorials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #editorials article {
+        max-width: 100%;
+    }
+}
